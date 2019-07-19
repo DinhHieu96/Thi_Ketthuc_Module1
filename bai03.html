@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fibonacci=[1,1,2,3,5,8,13,21];
+    document.write(fibonacci+"<br>");
+      function printFibonacci(n) {
+          let newArr=[];
+          for (let i=0;i<fibonacci.length;i++){
+              if (fibonacci[i]<n){
+                  newArr.push(fibonacci[i]);
+              }
+          }
+          return newArr;
+      }
+      let res1=printFibonacci(12);
+      document.write(res1+"<br>");
+      let res2=printFibonacci(25);
+      document.write(res2);
+</script>
+</body>
+</html>
